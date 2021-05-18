@@ -14,8 +14,10 @@
             "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
             "name": "PowerShell",
             "commandline": "powershell.exe",
+            "startingDirectory": "D:/",
             "hidden": false,
             "fontSize": 11,
+            "fontFace" : "Consolas",
             "colorScheme": "Tomorrow Dark"
         },
         {
@@ -25,6 +27,7 @@
             "commandline": "cmd.exe",
             "hidden": false,
             "fontSize": 11,
+            "fontFace" : "Consolas",
             "colorScheme": "Tomorrow Dark"
         },
         {
@@ -33,7 +36,17 @@
             "name": "Azure Cloud Shell",
             "source": "Windows.Terminal.Azure",
             "fontSize": 11,
+            "fontFace" : "Consolas",
             "colorScheme": "Tomorrow Dark"
+        },
+        {
+            "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+            "hidden": false,
+            "name": "Ubuntu",
+            "source": "Windows.Terminal.Wsl",
+            "fontSize": 11,
+            "fontFace" : "Consolas",
+            "startingDirectory": "~/ppux-1"
         }
     ],
 
@@ -107,7 +120,7 @@
 
     // Add any keybinding overrides to this array.
     // To unbind a default keybinding, set the command to "unbound"
-    "keybindings": [        
+    "keybindings": [
         { "command": "copy", "keys": ["ctrl+c"] },
         { "command": "paste", "keys": ["ctrl+v"] },
         { "command": "newTab", "keys": ["ctrl+t"] },
